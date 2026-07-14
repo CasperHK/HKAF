@@ -35,18 +35,18 @@
           >
         </label>
 
-        <button
-          type="button"
+        <NuxtLink
+          to="/login"
           class="rounded-md border border-white/15 bg-white/[0.03] px-4 py-2 text-sm font-semibold text-stone-100 transition hover:border-amber-200/30 hover:bg-white/10"
         >
           登入
-        </button>
-        <button
-          type="button"
+        </NuxtLink>
+        <NuxtLink
+          to="/login?intent=register"
           class="rounded-md border border-amber-200/25 bg-amber-100/10 px-4 py-2 text-sm font-semibold text-amber-100 transition hover:border-amber-200/40 hover:bg-amber-100/20"
         >
           註冊
-        </button>
+        </NuxtLink>
       </div>
     </div>
   </header>
