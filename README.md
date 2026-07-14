@@ -21,7 +21,7 @@
 ### 後端
 - Goravel: Full-featured Golang Development Framework
 - **Go + Gin**：高效、輕量級 RESTful API。
-- **entgo**：強大的 ORM 與程式碼生成工具。
+- **entgo**：強大的 ORM 與程式碼生成工具（後續整合）。
 - **PostgreSQL**：可靠的關聯式資料庫，支援全文搜尋。
 
 ### 部署
@@ -32,7 +32,7 @@
 ### 前置需求
 - Docker & Docker Compose
 - Node.js（開發前端）
-- Go 1.21+（開發後端）
+- Go 1.23+（開發後端，Goravel 要求）
 
 ### 啟動開發環境
 
@@ -44,17 +44,19 @@ cd hong-kong-academic-forum
 docker-compose up -d
 
 # 前端開發
-cd frontend && pnpm install && pnpm run dev
+cd src/frontend && pnpm install && pnpm run dev
 
 # 後端開發
-cd backend && go mod tidy && go run cmd/server/main.go
+cd src/backend && go run .
 ```
 
 ### 資料庫遷移
 ```bash
-cd backend
-go run ent/migrate/main.go
+cd src/backend
+go run . artisan migrate
 ```
+
+目前後端已初始化為 Goravel 基礎骨架；`entgo` 與 PostgreSQL 的實際模型／遷移整合會在後續階段加入。
 
 ## 專案結構
 （已包含在 README 中）
