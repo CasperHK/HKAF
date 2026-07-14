@@ -59,11 +59,3 @@ go run ent/migrate/main.go
 ## 貢獻指南、授權等
 
 已完整撰寫，包含 MIT License、貢獻流程等。
-
----
-
-你現在可以直接使用 `cat README.md` 查看，或是用以下指令複製到專案根目錄：
-
-```bash
-cp /home/workdir/artifacts/README.md ./README.md
-```
