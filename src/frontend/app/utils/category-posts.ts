@@ -290,6 +290,24 @@ const categoryPostRepliesByPostId: Record<string, CategoryPostReply[]> = {
       likeCount: 15
     }
   ],
+  'math-2': [
+    {
+      id: 'math-2-reply-1',
+      authorName: '曾嘉穎',
+      authorRole: '統計學博士生',
+      relativeTime: '1 小時前',
+      body: '如果你由 mixed model 轉 Bayesian，我會先用最簡單的二層 random intercept 模型建立 baseline，再逐步加入層級結構。先確保 posterior predictive check 過得去，之後先談更複雜 prior。',
+      likeCount: 16
+    },
+    {
+      id: 'math-2-reply-2',
+      authorName: '黃文浩',
+      authorRole: '教育數據研究員',
+      relativeTime: '42 分鐘前',
+      body: '建議你同步比較 weakly informative prior 同 domain-informed prior 的敏感度，並用 out-of-sample 指標做模型比較。單靠 in-sample fit 好易低估分層模型過擬合風險。',
+      likeCount: 12
+    }
+  ],
   'cs-1': [
     {
       id: 'cs-1-reply-1',
@@ -306,6 +324,60 @@ const categoryPostRepliesByPostId: Record<string, CategoryPostReply[]> = {
       relativeTime: '22 分鐘前',
       body: '端到端任務完成率也要早點放進來，不然 retrieval 指標很好看但實際答題體驗仍可能差。建議雙軌：離線檢索 + 小規模真人任務測試。',
       likeCount: 11
+    }
+  ],
+  'astro-1': [
+    {
+      id: 'astro-1-reply-1',
+      authorName: '張志強',
+      authorRole: '物理系博士助理',
+      relativeTime: '1 小時前',
+      body: '觀察昨晚的大帽山雷達圖，在黑雨信號發出前 15 分鐘，確實看到對流單元在沙田上空出現垂直發展劇增的情況。除咗 merge，反映降雨密度的結構變化都係短時預報好關鍵嘅信號。',
+      likeCount: 14
+    },
+    {
+      id: 'astro-1-reply-2',
+      authorName: '李家傑',
+      authorRole: '博士研究生',
+      relativeTime: '45 分鐘前',
+      body: '公共版雷達資料時間分辨率有局限，實戰上建議同步睇各區雨量計嘅 5 分鐘滑動總和。當雷達回波增強同地面雨量同步上升，通常就代表對流系統已進入成熟階段。',
+      likeCount: 8
+    }
+  ],
+  'eco-1': [
+    {
+      id: 'eco-1-reply-1',
+      authorName: '陳美琪',
+      authorRole: '生態統計研究員',
+      relativeTime: '2 小時前',
+      body: '建議用 occupancy modeling 去修正 detectability。米埔唔同觀察點嘅遮蔽度同潮汐影響都幾大，將環境協變量同觀測 effort 一齊入模，會比 raw count 更可靠。',
+      likeCount: 11
+    },
+    {
+      id: 'eco-1-reply-2',
+      authorName: '何子康',
+      authorRole: '自然導賞導師',
+      relativeTime: '1 小時前',
+      body: '公民科學資料最常見問題係觀察者能力差異，我哋通常會先分 core observers 同一般參與者，再做 effort standardization，避免出現人流變化被誤當族群變化。',
+      likeCount: 9
+    }
+  ],
+  'mech-1': [
+    {
+      id: 'mech-1-reply-1',
+      authorName: '馬健榮',
+      authorRole: '高級機電顧問',
+      relativeTime: '3 小時前',
+      body: '喺香港校園改造場景，我會優先睇 LCC 而唔係只睇額定 COP。部分負載運行時間好長，如果忽略 part-load 區間，後續運維成本通常會被低估。',
+      likeCount: 19
+    },
+    {
+      id: 'mech-1-reply-2',
+      authorName: '林思敏',
+      authorRole: '可持續發展工程師',
+      relativeTime: '2 小時前',
+      body: '補充一點：若校園有淨零目標，建議把設備更換的隱含碳都納入評估。好多時系統優化加控制策略調校，會比單純換高規格設備更有成本效益。',
+      likeCount: 13
     }
   ]
 }

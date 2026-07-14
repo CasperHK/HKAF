@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import PostRepliesPanel from '~/components/discussion/PostRepliesPanel.vue'
 import type { CategoryPostReply } from '~/utils/category-posts'
 import { getPostByCategoryAndId, getRepliesByPostId } from '~/utils/category-posts'
 import { getCategoryBySlug } from '~/utils/categories'

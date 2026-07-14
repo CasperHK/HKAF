@@ -259,8 +259,8 @@ useSeoMeta({
 
     <section id="related-fields" class="border-t border-white/10 bg-black/10 py-24 sm:py-28">
       <div class="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12">
-        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <div class="max-w-2xl space-y-4">
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div class="max-w-3xl space-y-3">
             <p class="text-sm font-medium uppercase tracking-[0.26em] text-amber-200/75">
               Related Fields
             </p>
@@ -268,24 +268,25 @@ useSeoMeta({
               也可延伸探索其他相鄰學術方向。
             </h2>
           </div>
+
           <NuxtLink
             to="/#fields"
-            class="inline-flex items-center gap-2 text-sm font-semibold text-stone-200 hover:text-amber-100"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-stone-100 hover:text-amber-100"
           >
             返回全部領域
             <span aria-hidden="true">→</span>
           </NuxtLink>
         </div>
 
-        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+        <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           <NuxtLink
             v-for="item in otherCategories"
             :key="item.slug"
             :to="`/categories/${item.slug}`"
-            class="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_16px_50px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-amber-200/30 hover:bg-white/[0.05]"
+            class="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_16px_50px_rgba(0,0,0,0.16)] transition duration-300 hover:-translate-y-1 hover:border-amber-200/30 hover:bg-white/[0.05]"
           >
             <div class="space-y-4">
-              <p class="text-sm uppercase tracking-[0.2em] text-amber-200/75">
+              <p class="text-xs uppercase tracking-[0.22em] text-amber-200/70">
                 {{ item.englishTitle }}
               </p>
               <h3 class="text-2xl font-semibold text-stone-50">
@@ -294,10 +295,10 @@ useSeoMeta({
               <p class="text-base leading-7 text-stone-300">
                 {{ item.description }}
               </p>
-              <div class="inline-flex items-center gap-2 text-sm font-semibold text-amber-100/85">
+              <span class="inline-flex items-center gap-2 text-sm font-semibold text-amber-100/85">
                 瀏覽此領域
                 <span aria-hidden="true" class="transition-transform duration-300 group-hover:translate-x-1">→</span>
-              </div>
+              </span>
             </div>
           </NuxtLink>
         </div>
