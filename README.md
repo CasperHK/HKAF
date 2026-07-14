@@ -42,7 +42,7 @@ cd hong-kong-academic-forum
 docker-compose up -d
 
 # 前端開發
-cd frontend && npm install && npm run dev
+cd frontend && pnpm install && pnpm run dev
 
 # 後端開發
 cd backend && go mod tidy && go run cmd/server/main.go
