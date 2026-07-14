@@ -17,6 +17,7 @@
 - Tailwind CSS + 自訂學術主題。
 
 ### 後端
+- Goravel: Full-featured Golang Development Framework
 - **Go + Gin**：高效、輕量級 RESTful API。
 - **entgo**：強大的 ORM 與程式碼生成工具。
 - **PostgreSQL**：可靠的關聯式資料庫，支援全文搜尋。
