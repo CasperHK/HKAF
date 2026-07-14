@@ -9,12 +9,14 @@
 - **學術氛圍**：支援 LaTeX 數學公式、程式碼高亮、圖片與附件上傳，鼓勵引用來源與數據支持的討論。
 - **香港本土視角**：整合本地氣象、天文、生態、能源等相關議題，歡迎香港及大灣區學者、學生與從業人員參與。
 - **現代化 UI**：精美、專業的學術風格介面（深色調、乾淨排版、serif 字體），支援深色模式與響應式設計。
+- **多種登錄方式**：Google、Email/Password、Apple
 
 ## 技術棧
 
 ### 前端
 - **Nuxt.js** (Vue 3 + TypeScript)：現代 SSR 框架，提供優異的 SEO 與性能。
-- Tailwind CSS + 自訂學術主題。
+- Tailgrids + Tailwind CSS + 自訂學術主題（不同顏色）。
+- **KaTeX**：支援 LaTeX 數學公式渲染。
 
 ### 後端
 - Goravel: Full-featured Golang Development Framework
